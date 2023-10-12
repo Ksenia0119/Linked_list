@@ -1,7 +1,7 @@
 #pragma once
 //@author Maltseva K.V.
 template<class T>
-//абстрактный класс итератор
+// абстрактный класс итератор
 class Iterator {
 public:
     //получение значения элемента,не изменяя его
