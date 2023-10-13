@@ -7,9 +7,9 @@ int main() {
 
     setlocale(LC_ALL, "rus");
     //создаем лист
-    //LinkedList<int> *list=new LinkedList<int>();
+    
    // LinkedList<int> list;
-   // list.InserTail(7);
+    //list.InsertTail(7);
    // list.InsertHead(10);
    // list.InserTail(44);
    // list.InserTail(21);
