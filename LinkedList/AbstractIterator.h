@@ -16,13 +16,13 @@ public:
     virtual bool operator!=(const Iterator<T>& other) const = 0;
     virtual ~Iterator() {}
 };
-//абстрактный класс итерируемого
-template<class T>
-class Iterable {
-public:
-    //начало коллекции
-    virtual Iterator<T>& begin() const = 0;
-    //конец коллекции
-    virtual Iterator<T>& end() const = 0;
-   // virtual ~Iterable() {}
-};
+////абстрактный класс итерируемого
+//template<class T>
+//class Iterable {
+//public:
+//    //начало коллекции
+//    virtual Iterator<T>& begin() const = 0;
+//    //конец коллекции
+//    virtual Iterator<T>& end() const = 0;
+//   // virtual ~Iterable() {}
+//};

@@ -21,7 +21,7 @@ public:
 
 //Класс двусвязного списка
 template<class T>
-class LinkedList :public Iterable<T> {
+class LinkedList /*:public Iterable<T>*/ {
 private:
     Node<T>* head;//указатель на голову списка
     Node<T>* tail;//указател  на хвост списка
@@ -92,22 +92,17 @@ public:
 
     };
     // Итератор начала списка
-    ListIterator<T>& begin() const override {
+    ListIterator<T> begin() const {
         //возвращает итератор ,который указывает на головной узел списка
         return ListIterator<T>(head);
     }
     // Итератор начала списка
-    ListIterator<T>&& end() const override {
-        //возвращает итератор ,который указывает на головной узел списка
+    ListIterator<T> end() const  {
+        //возвращает итератор ,который указывает на позицию после последнего узла списка
         return ListIterator<T>(nullptr);
     }
 
-    //// Итератор конца списка
-    //ListIterator<T> &end() const override {
-    //    ListIterator<T> *n= new  ListIterator<T>(head);
-    //    //возвращает итератор,который указывает на позицию после последнего узла списка
-    //    return *n;
-    //}
+   
 };
 
 

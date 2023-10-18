@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClInclude Include="AbstractIterator.h" />
     <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="TestIteratorLinkedList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
